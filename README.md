@@ -1,27 +1,33 @@
-# 🏠 DiscordMobilePlayingCLI
+# 🏠 Discord-Mobile-Playing-CLI
 
 Discord currently only supports game activity on a mobile platform using Samsung Game Launcher, which is only available on Samsung devices.
 
-DiscordMobilePlayingCLI is only a PoC that game activities can be implemented on another platform like jailbroken iOS ([iOS-DiscordPresence](https://github.com/YuzuZensai/iOS-DiscordPresence)), or another kind of android distros by using the Discord API. Well, you can't do anything about the "Playing on Samsung Galaxy" for now.
+Discord-Mobile-Playing-CLI is only a PoC that game activities can be implemented on another platform like jailbroken iOS ([iOS-DiscordPresence](https://github.com/YuzuZensai/iOS-DiscordPresence)), or another kind of android distros by using the Discord API. Well, you can't do anything about the "Playing on Samsung Galaxy" for now.
 
 ![Discord Preview](https://user-images.githubusercontent.com/84713269/166914540-d2a4edac-1f33-43ed-a860-4bded04029b5.png)
 
-## 👜 Prerequisites
+## Prerequisites
 
-- [NodeJS](https://nodejs.org/)
-- Package manager npm/yarn or others
+- [Bun](https://bun.sh/)
 
-## 🔧 Installation
+## Installation
 
 1. Clone this repository
-2. Install dependencies with ``yarn`` for yarn, or ``npm install`` for npm
-3. Run the script ``yarn start`` or ``npm start``
+2. Install dependencies with ``bun install``
+3. Copy ``.env.example`` to ``.env`` and fill in your token
+4. Run the script ``bun run dev``
 
-## 🌳 Environment Variables
+## Development
 
-- ``token`` Your Discord account token
+- ``bun run check`` Typecheck, lint, and format-check the project
+- ``bun run lint`` / ``bun run lint:fix`` Lint (and autofix) with Biome
+- ``bun run format`` / ``bun run format:fix`` Check (and autofix) formatting with Biome
 
-## 🌸 Commands
+## Environment Variables
+
+- ``TOKEN`` Your Discord account token
+
+## Commands
 
 - ``set [BUNDLE_ID]`` Set application bundle id
 - ``start`` Start showing the presence
@@ -29,7 +35,7 @@ DiscordMobilePlayingCLI is only a PoC that game activities can be implemented on
 - ``update`` Update the current presences with new bundle id
 - ``exit`` Exit the application
 
-## 🌏 API used
+## API used
 
 You do not need to authorize the Samsung Game Launcher OAuth to use this API
 
@@ -51,9 +57,9 @@ You do not need to authorize the Samsung Game Launcher OAuth to use this API
 }
 ```
 
-## ⚠️ Disclaimer
+## Disclaimer
 
-DiscordMobilePlayingCLI utilizes API that is outside OAuth2/bot API scope.
+Discord-Mobile-Playing-CLI utilizes API that is outside OAuth2/bot API scope.
 
 ``/api/v6/presences``
 
