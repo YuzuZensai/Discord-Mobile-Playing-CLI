@@ -6,7 +6,7 @@
 
 Discord currently only supports game activity on a mobile platform using Samsung Game Launcher, which is only available on Samsung devices.
 
-Discord-Mobile-Playing-CLI is only a PoC that game activities can be implemented on another platform like jailbroken iOS ([iOS-DiscordPresence](https://github.com/YuzuZensai/iOS-DiscordPresence)), or another kind of android distros by using the Discord API. Well, you can't do anything about the "Playing on Samsung Galaxy" for now.
+Discord-Mobile-Playing-CLI is only a PoC that game activities can be implemented on another platform like jailbroken iOS ([iOS-Discord-Presence](https://github.com/YuzuZensai/iOS-Discord-Presence)), or another kind of android distros by using the Discord API. Well, you can't do anything about the "Playing on Samsung Galaxy" for now.
 
 ![Discord Preview](https://user-images.githubusercontent.com/84713269/166914540-d2a4edac-1f33-43ed-a860-4bded04029b5.png)
 
@@ -61,10 +61,14 @@ You do not need to authorize the Samsung Game Launcher OAuth to use this API
 }
 ```
 
+## License
+[MIT](./LICENSE)
+
 ## Disclaimer
 
-Discord-Mobile-Playing-CLI utilizes API that is outside OAuth2/bot API scope.
-
-``/api/v6/presences``
-
-Automating normal user accounts (generally called "self-bots") outside of the OAuth2/bot API is a **violation** of Discord [Terms Of service](https://discord.com/terms) & [Community Guidelines](https://discord.com/guidelines), and can result in account termination if found. **I do not take any responsibility, liability, or anything that happened on your Discord Account.**
+> [!CAUTION]
+> Discord-Mobile-Playing-CLI utilizes API that is outside OAuth2/bot API scope.
+>
+> ``/api/v6/presences``
+>
+> Automating normal user accounts (generally called "self-bots") outside of the OAuth2/bot API is a **violation** of Discord [Terms Of service](https://discord.com/terms) & [Community Guidelines](https://discord.com/guidelines), and can result in account termination if found. **I do not take any responsibility, liability, or anything that happened on your Discord Account.**
