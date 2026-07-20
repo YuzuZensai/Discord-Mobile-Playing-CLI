@@ -1,5 +1,9 @@
 # 🏠 Discord-Mobile-Playing-CLI
 
+> [!WARNING]
+> **Deprecated. This repository will be archived.**
+> Samsung ended its Discord integration in Gaming Hub on January 31, 2024 (Discord partnership terminated), and Discord has since removed the `/api/v6/presences` endpoint this project relies on (it now returns `404 Not Found`). There is no known replacement endpoint, so this tool no longer works and will not be updated further.
+
 Discord currently only supports game activity on a mobile platform using Samsung Game Launcher, which is only available on Samsung devices.
 
 Discord-Mobile-Playing-CLI is only a PoC that game activities can be implemented on another platform like jailbroken iOS ([iOS-DiscordPresence](https://github.com/YuzuZensai/iOS-DiscordPresence)), or another kind of android distros by using the Discord API. Well, you can't do anything about the "Playing on Samsung Galaxy" for now.
